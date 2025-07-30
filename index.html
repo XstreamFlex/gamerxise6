@@ -4,142 +4,205 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GamerXise6 - Game-Focused Fitness</title>
+    <title>GamerXise6 - Fitness for Gamers</title>
     <style>
         body {
             font-family: 'Arial', sans-serif;
+            background-color: #f5f5f5;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
             color: #333;
         }
-        .navbar {
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
             background: #333;
-            color: #fff;
-            padding: 10px 0;
-            position: sticky;
-            top: 0;
+            color: #ffffff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #e8491d 3px solid;
         }
-        .navbar ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-            justify-content: center;
-        }
-        .navbar ul li {
-            padding: 0 15px;
-        }
-        .navbar a {
-            color: #fff;
+        header a {
+            color: #ffffff;
             text-decoration: none;
-            transition: color 0.3s;
+            text-transform: uppercase;
+            font-size: 16px;
         }
-        .navbar a:hover {
-            color: #57b846;
+        header ul {
+            padding: 0;
+            list-style: none;
         }
-        .hero {
-            background: url('gaming-gear.jpg') no-repeat center center/cover;
-            height: 70vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            color: #fff;
+        header li {
+            display: inline;
+            padding: 0 20px 0 20px;
         }
-        .hero h1 {
-            font-size: 3rem;
+        header #branding {
+            float: left;
+        }
+        header #branding h1 {
             margin: 0;
         }
-        .about, .products, .blog {
-            padding: 50px;
+        header nav {
+            float: right;
+            margin-top: 10px;
+        }
+        header .highlight, header .current a {
+            color: #e8491d;
+            font-weight: bold;
+        }
+        header a:hover {
+            color: #ffffff;
+            font-weight: bold;
+        }
+        .showcase {
+            min-height: 400px;
+            background: url('showcase.jpg') no-repeat 0 -50px;
             text-align: center;
+            color: #ffffff;
+        }
+        .showcase h1 {
+            margin-top: 100px;
+            font-size: 55px;
+            margin-bottom: 10px;
+        }
+        .showcase p {
+            font-size: 20px;
+        }
+        .description {
+            padding: 15px;
+            background: #333;
+            color: #ffffff;
+            border-bottom: #e8491d 3px solid;
+        }
+        .description h2 {
+            margin: 0;
+        }
+        .description p {
+            margin: 0;
+        }
+        .products {
+            padding: 15px;
+            color: #333;
+        }
+        .products h2 {
+            margin: 0;
+        }
+        .about {
+            padding: 15px;
+            color: #333;
+        }
+        .about h2 {
+            margin: 0;
+        }
+        footer {
+            background: #333;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
         }
         .card {
-            background: #fff;
-            padding: 20px;
-            margin: 20px auto;
-            width: 80%;
-            max-width: 300px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: white;
+            border: 1px solid #ccc;
+            margin-bottom: 20px;
+            padding: 15px;
         }
         .card h3 {
-            font-size: 1.5rem;
-            margin-top: 0;
+            margin: 0;
         }
         .card p {
-            font-size: 1rem;
-            margin: 10px 0;
+            margin: 0;
         }
-        @media (min-width: 768px) {
-            .about, .products, .blog {
-                text-align: left;
-            }
-            .card {
-                max-width: 500px;
-            }
+        .blog-link {
+            color: #e8491d;
+            text-decoration: none;
+        }
+        .blog-link:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
-    <div class="navbar">
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#products">Products</a></li>
-            <li><a href="#blog">Blog</a></li>
-        </ul>
-    </div>
-
-    <div class="hero" id="home">
-        <h1>Welcome to GamerXise6</h1>
-    </div>
-
-    <div class="about" id="about">
-        <h2>About GamerXise</h2>
-        <p>GamerXise is a gamer fitness company that creates exercise programs that can be done while playing your favorite video games with Xbox or PlayStation controller in hand. GamerXise delivers full body, strength and cardio workouts from your living room, with no additional equipment required. GamerXise is designed to improve both body and mind.</p>
-        <p>GamerXise not only improves users' health and fitness, but also their reaction time, brain-body relationship, and can have dramatic improvements on game skill. GamerXise users have reported fat loss, muscle growth, improved focus, improved hormones, improved mood, and they achieved all this while playing their favorite games.</p>
-    </div>
-
-    <div class="products" id="products">
-        <h2>Our Products</h2>
-        <div class="card" style="max-width: 100%;">
-            <h3>GamerXise Lite</h3>
-            <p>Start your fitness journey with GamerXise Lite, designed for beginners. Get access to basic exercise routines that can be performed while gaming.</p>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1><span class="highlight">Gamer</span>Xise6</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li class="current"><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                </ul>
+            </nav>
         </div>
-        <div class="card" style="max-width: 100%;">
-            <h3>GamerXise Pro</h3>
-            <p>For the more serious gamers, GamerXise Pro offers advanced workout plans and personalized training to optimize your gaming performance.</p>
-        </div>
-    </div>
+    </header>
 
-    <div class="blog" id="blog">
-        <h2>Latest Blog Posts</h2>
-        <div class="card">
-            <h3>5 Ways GamerXise Boosts Your Gaming Performance</h3>
-            <p>Find out how incorporating GamerXise workouts can significantly improve your gaming skills, reaction times, and overall health.</p>
+    <section class="showcase">
+        <div class="container">
+            <h1>Fitness. <span class="highlight">Gaming.</span> Revolutionized.</h1>
+            <p>GamerXise6 - Get fit while you game.</p>
         </div>
-        <div class="card">
-            <h3>The Science Behind GamerXise</h3>
-            <p>Delve into the scientific research that supports the effectiveness of GamerXise in improving both physical fitness and cognitive performance.</p>
-        </div>
-        <div class="card">
-            <h3>GamerXise Success Stories</h3>
-            <p>Read about real-life experiences of GamerXise users who have transformed their lives by combining gaming and fitness.</p>
-        </div>
-    </div>
+    </section>
 
+    <section class="description">
+        <div class="container">
+            <h2>About GamerXise6</h2>
+            <p>GamerXise is a gamer fitness company that creates exercise programs that can be done while playing your favorite video games with Xbox or PlayStation controller in hand. Delivering full body, strength and cardio workouts from your living room, with no additional equipment required. GamerXise is designed to improve both body and mind.</p>
+        </div>
+    </section>
+
+    <section class="products">
+        <div class="container">
+            <h2>Our Products</h2>
+            <p>Explore our range of fitness programs tailored for gamers.</p>
+            <!-- Placeholder for products -->
+        </div>
+    </section>
+
+    <section class="about">
+        <div class="container">
+            <h2>Why GamerXise6?</h2>
+            <p>GamerXise not only improves users' health and fitness, but also their reaction time, brain-body relationship, and can have dramatic improvements on game skill. Our users have reported fat loss, muscle growth, improved focus, improved hormones, improved mood, and they achieved all this while playing their favorite games.</p>
+        </div>
+    </section>
+
+    <section class="blog">
+        <div class="container">
+            <h2>Latest from the Blog</h2>
+            <div class="card">
+                <h3>How GamerXise6 Changed My Life</h3>
+                <p>Join our community member as he shares his journey on how GamerXise6 helped him improve his health and gaming skills.</p>
+                <a href="blog-post1.html" class="blog-link">Read More</a>
+            </div>
+            <div class="card">
+                <h3>Exercises for Every Gamer</h3>
+                <p>Discover how to incorporate fitness into your gaming routine with our top 5 exercises for gamers.</p>
+                <a href="blog-post2.html" class="blog-link">Read More</a>
+            </div>
+            <div class="card">
+                <h3>The Science Behind GamerXise6</h3>
+                <p>Learn about the science behind GamerXise6 and how it's helping gamers improve their performance.</p>
+                <a href="blog-post3.html" class="blog-link">Read More</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>GamerXise6 &copy; 2023</p>
+    </footer>
     <script>
-        // Vanilla JS to handle smooth scrolling on navbar links
-        document.querySelectorAll('.navbar a').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
+        // Vanilla JS to handle any additional functionality needed
+        // For example, you could add a smooth scrolling script here or handle any form submissions
     </script>
 </body>
 </html>
 ```
+
+This HTML file represents a landing page for GamerXise6, a gamer fitness company. It includes sections for showcasing the company, describing the product/service, and teasers for the blog. The critical CSS is inlined within the `<style>` tag for quick rendering, and a placeholder for additional vanilla JavaScript functionality is provided at the bottom of the body. Additional pages for About, Products, and Blog can be created and linked accordingly.
