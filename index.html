@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GamerXise6 - Gamer Fitness Revolution</title>
+    <title>GamerXise6 - Fitness for Gamers</title>
     <style>
         body {
             font-family: 'Arial', sans-serif;
@@ -18,181 +18,167 @@
             overflow: hidden;
         }
         header {
-            background: #333;
+            background: #1a1a1a;
             color: #fff;
-            padding-top: 30px;
-            min-height: 70px;
-            border-bottom: #e8491d 3px solid;
+            padding: 20px 0;
+            text-align: center;
         }
-        header a {
-            color: #fff;
-            text-decoration: none;
-            text-transform: uppercase;
-            font-size: 16px;
-        }
-        header ul {
-            padding: 0;
-            list-style: none;
-        }
-        header li {
-            display: inline;
-            padding: 0 20px 0 20px;
-        }
-        header #branding {
-            float: left;
-        }
-        header #branding h1 {
+        header h1 {
             margin: 0;
         }
-        header nav {
-            float: right;
-            margin-top: 10px;
+        nav {
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+            background: #333;
         }
-        header .highlight, header .current a {
-            color: #e8491d;
-            font-weight: bold;
-        }
-        header a:hover {
-            color: #ffffff;
-            font-weight: bold;
-        }
-        #showcase {
-            min-height: 400px;
-            background: url('gaming-background.jpg') no-repeat 0 -100px;
-            text-align: center;
+        nav a {
             color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            transition: background 0.3s ease;
         }
-        #showcase h1 {
-            margin-top: 100px;
-            font-size: 55px;
-            margin-bottom: 10px;
+        nav a:hover {
+            background: #555;
         }
-        #showcase p {
-            font-size: 20px;
+        .banner {
+            background: url('banner.jpg') no-repeat center center/cover;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            text-align: center;
         }
-        #main {
-            padding: 15px;
+        .banner h2 {
+            font-size: 3em;
+        }
+        .about, .products {
+            padding: 40px 0;
             background: #fff;
         }
-        #main .content-header {
-            font-size: 25px;
-            color: #333;
+        .about h2, .products h2 {
+            text-align: center;
+            margin-bottom: 20px;
         }
-        #main .content-text {
-            font-size: 18px;
-            color: #666;
+        .features {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px 0;
         }
-        #main .content-text strong {
-            color: #e8491d;
+        .feature {
+            text-align: center;
+            width: 30%;
         }
-        #main .content-text img {
-            max-width: 100%;
+        .feature img {
+            width: 100px;
             height: auto;
         }
-        #main .blog-teasers {
-            margin-top: 20px;
-        }
-        #main .blog-teaser {
-            background: #fff;
-            border: 1px solid #ddd;
-            padding: 15px;
-            margin-bottom: 10px;
-        }
-        #main .blog-teaser h3 {
-            margin: 0;
-            color: #333;
-        }
-        #main .blog-teaser p {
-            color: #666;
-            font-size: 14px;
-        }
-        #main .blog-teaser a {
-            display: inline-block;
-            background: #e8491d;
-            color: #fff;
-            padding: 10px 20px;
-            text-decoration: none;
+        .feature h3 {
             margin-top: 10px;
         }
-        #main .blog-teaser a:hover {
-            background: #333;
+        .blogs {
+            background: #1a1a1a;
+            color: #fff;
+            padding: 40px 0;
+        }
+        .blog-teaser {
+            margin-bottom: 20px;
+        }
+        .blog-teaser h3 {
+            margin: 0;
+        }
+        .blog-teaser p {
+            margin: 10px 0;
         }
         footer {
             background: #333;
             color: #fff;
             text-align: center;
-            padding: 10px;
-            position: relative;
-            bottom: 0;
-            width: 100%;
+            padding: 20px 0;
         }
     </style>
 </head>
 <body>
     <header>
         <div class="container">
-            <div id="branding">
-                <h1><span class="highlight">GamerXise6</span></h1>
-            </div>
-            <nav>
-                <ul>
-                    <li class="current"><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="products.html">Products</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                </ul>
-            </nav>
+            <h1>GamerXise6</h1>
         </div>
     </header>
-
-    <section id="showcase">
+    <nav>
         <div class="container">
-            <h1>Gamer Fitness Revolution</h1>
-            <p>Work out while playing your favorite games with no additional equipment required.</p>
+            <a href="#about">About</a>
+            <a href="#products">Products</a>
+            <a href="blog.html">Blog</a>
         </div>
-    </section>
-
-    <section id="main">
+    </nav>
+    <div class="banner">
         <div class="container">
-            <article id="main-col">
-                <h1 class="content-header">About GamerXise6</h1>
-                <p class="content-text">GamerXise is a gamer fitness company that creates exercise programs that can be done while playing your favorite video games with an Xbox or PlayStation controller in hand. We deliver full body, strength and cardio workouts from your living room, with no additional equipment required. GamerXise is designed to improve both body and mind.</p>
-                <p class="content-text">GamerXise not only improves users' health and fitness, but also their reaction time, brain-body relationship, and can have dramatic improvements on game skill. GamerXise users have reported fat loss, muscle growth, improved focus, improved hormones, improved mood, and they achieved all this while playing their favorite games.</p>
-                <img src="gaming-exercise.jpg" alt="Gaming Exercise">
-            </article>
-
-            <aside id="sidebar">
-                <div class="blog-teasers">
-                    <div class="blog-teaser">
-                        <h3>How GamerXise Changed My Life</h3>
-                        <p>Read about how one of our users transformed their gaming experience and health.</p>
-                        <a href="blog-post.html">Read More</a>
-                    </div>
-                    <div class="blog-teaser">
-                        <h3>5 Tips for Effective Gaming Workouts</h3>
-                        <p>Learn how to maximize your fitness gains while gaming with these 5 tips.</p>
-                        <a href="blog-post.html">Read More</a>
-                    </div>
-                    <div class="blog-teaser">
-                        <h3>Gaming and Mental Health: The Benefits</h3>
-                        <p>Discover the mental health benefits of combining gaming and exercise.</p>
-                        <a href="blog-post.html">Read More</a>
-                    </div>
-                </div>
-            </aside>
+            <h2>Fitness for Gamers</h2>
+            <p>Workout while you play, no additional equipment required.</p>
         </div>
-    </section>
-
+    </div>
+    <div id="about" class="about">
+        <div class="container">
+            <h2>About GamerXise6</h2>
+            <p>GamerXise is a gamer fitness company that creates exercise programs that can be done while playing your favorite video games with Xbox or PlayStation controller in hand. Delivering full body, strength and cardio workouts from your living room, GamerXise is designed to improve both body and mind.</p>
+            <p>Our programs not only improve users' health and fitness but also their reaction time, brain-body relationship, and can have dramatic improvements on game skill. GamerXise users have reported fat loss, muscle growth, improved focus, improved hormones, improved mood, and they achieved all this while playing their favorite games.</p>
+        </div>
+    </div>
+    <div id="products" class="products">
+        <div class="container">
+            <h2>Our Products</h2>
+            <!-- Products Section -->
+        </div>
+    </div>
+    <div class="features">
+        <div class="feature">
+            <img src="icon1.png" alt="Feature 1">
+            <h3>Full Body Workouts</h3>
+            <p>Strengthen and tone your entire body with our comprehensive exercise routines.</p>
+        </div>
+        <div class="feature">
+            <img src="icon2.png" alt="Feature 2">
+            <h3>Improve Reaction Time</h3>
+            <p>Enhance your gaming skills by improving your reaction time and coordination.</p>
+        </div>
+        <div class="feature">
+            <img src="icon3.png" alt="Feature 3">
+            <h3>Mind and Body Connection</h3>
+            <p>Strengthen the connection between your mind and body for better overall performance.</p>
+        </div>
+    </div>
+    <div class="blogs">
+        <div class="container">
+            <h2>Latest Blog Posts</h2>
+            <div class="blog-teaser">
+                <h3>5 Tips for Gamers to Stay Fit</h3>
+                <p>Discover how to maintain your fitness while indulging in your passion for gaming.</p>
+            </div>
+            <div class="blog-teaser">
+                <h3>How GamerXise6 Helped Me Lose Weight</h3>
+                <p>Read about a real user's experience with GamerXise6 and how it transformed their gaming and fitness journey.</p>
+            </div>
+            <div class="blog-teaser">
+                <h3>Gaming and Mental Health: The Benefits</h3>
+                <p>Learn how gaming can have a positive impact on your mental health and well-being.</p>
+            </div>
+        </div>
+    </div>
     <footer>
-        <p>GamerXise6 &copy; 2023</p>
+        <div class="container">
+            <p>&copy; 2023 GamerXise6. All rights reserved.</p>
+        </div>
     </footer>
-
     <script>
         // Vanilla JS for simple interactions
-        document.querySelectorAll('header nav ul li a').forEach(link => {
-            if (window.location.pathname.includes(link.getAttribute('href'))) {
-                link.classList.add('current');
-            }
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
         });
     </script>
 </body>
